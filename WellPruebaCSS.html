@@ -372,6 +372,20 @@
             border-radius: 0%;
         }
         
+        .degradado_radial_multicolor{
+            padding: 25px;
+            min-height: 250px;
+            max-width: 450px;
+            background: radial-gradient(black 10%, aqua 15%, blue 55%);   
+
+        }
+        
+        .degradado_radial_repetido{
+            padding:25px;
+            min-height: 250px;
+            max-width: 450px;
+            background: repeating-radial-gradient(black, aqua 10%, blue 15%);
+        }
         
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
@@ -666,7 +680,7 @@
             <br>
             
             
-            <p> Tambien es posible darle varios colores </p>
+            <p> Es posible darle varios colores </p>
             
             <p>  Background: linear-gradient(to bottom, aqua, #FFFFFF, rgb(0,0,255), rgba(0,0,0,1), purple );</p>
             
@@ -681,6 +695,21 @@
             <p> Background: radial-gradient(blue, aqua); </p>
             
             <p class="degradado_radial"> </p>
+            
+            <p> Tambien posible aplicarle varios colores, e incluso definir el tamaño que abarca el color </p>
+            
+            <p> Background: radial-gradient(black 10%, aqua 15%, blue 55%);  </p>
+            
+            <p class="degradado_radial_multicolor"></p>
+            
+            <p> Y aplicarle repetición </p>
+            
+            <p> Background: repeating-radial-gradient(black, aqua 10%, blue 15%); </p>
+            
+            <p class="degradado_radial_repetido"></p>
+            
+            
+            <br>
             
             
         </div>
