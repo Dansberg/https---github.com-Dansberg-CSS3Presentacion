@@ -1,0 +1,701 @@
+<html>
+    
+    <head>
+        
+        <title> Well Prueba CSS y eso</title>
+
+    <style>
+    
+            
+        /* Apuntar transiciones por defecto */
+        
+        
+        /* CSS general, del contenedor que esta aplicado a todo y hace que se centre el bloque principal y se vean los pequeños margenes a los lados*/
+        
+        body{
+            background-color: #737373;
+        }
+        
+        .contenedor{
+            
+            min-height: 600px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: block;
+            margin-left: 50px;
+            margin-right:50px;
+            margin-top: 20px;
+            box-shadow: 7px 7px 5px 3px rgba(0,0,0,0.75);
+            
+        }
+        
+        .contenedor ul{
+            margin-left: 35%;
+            margin-right: 20%;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .contenedor a{
+            text-decoration: underline;
+            transition: 1s;
+            color: black;
+            cursor: pointer;
+
+            
+        }
+        
+        .contenedor a:hover{
+            color:#933302;
+           
+        }
+   
+        /* Coloes de fondos */
+  
+        #suave_1{
+            background-color: #006ce0;
+        }
+        
+        #suave_2{
+            background-color: #C8D5B9;
+        }
+        
+        #suave_3{
+            background-color: #8FC0A9;
+        }
+        
+        #suave_4{
+            background-color: #68B0AB;
+        }
+        
+        #suave_5{
+            background-color: #01c698;
+        }
+        
+        /* Estilos de parrafos */
+        
+        p{
+            font-size: 30px;
+            text-align: center;
+            display: block;
+        }
+        
+        p{
+            color:rgba(0,0,0,0.8);
+            display: block;
+            margin: 0 auto;
+            padding-top: 20px;
+            max-width: 1000px;
+            margin-bottom: 15px;
+            transition: 5s;
+            
+                    }
+        
+        p:hover{
+            color: black;
+            cursor:pointer;
+            transform: scale(1);
+
+        }
+        
+        /* Estilos de encaezados */
+        
+        h1{
+            font-size: 50px;
+            text-align: center;
+      
+        }
+        
+        h1{
+            color:black;
+            transition:1s;
+            border-bottom: 5px solid transparent;
+            transition: all ease-in-out 1s;
+            display:contents;
+            margin: 0 auto;
+            padding-top: 30px;
+            max-width: 500px;
+            margin-bottom: 15px;
+            font-family:fantasy;
+            
+            
+        }
+        
+        h1:hover{
+            color: black;
+            border-color: black;
+            cursor:pointer;        
+        }
+
+        h2{
+            color: rgba(0,0,0,0.7);
+            text-align: center;
+            font-size: 40px;
+            cursor:pointer;
+            border-bottom: 2px solid transparent;
+            transition: all ease-in-out 0.4s;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        h2:hover{
+            border-color: rgba(0,0,0,0.7);
+            
+        }
+        
+        h3{
+        color: rgba(0,0,0,0.7);
+        text-align: center;
+        font-size: 35px;
+        cursor:pointer;
+        border-bottom: 2px solid transparent;
+        transition: all ease-in-out 0.4s;
+        max-width: 300px;
+        margin: 0 auto;
+        
+        }
+        
+        h3:hover{
+            border-color: rgba(0,0,0,0.7);
+            
+        }
+        
+        /* Este es fake, es mas grande que los otros pero bueno*/
+    
+        h7{
+            color: rgba(0,0,0,0.9);
+            text-align: center;
+            font-size: 45px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all ease-in-out 0.4s;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        h7:hover{
+            border-color: rgba(0,0,0,0.9);
+        
+            
+        }
+        
+        
+        /* Partes de las imagenes */
+        
+        .contenedor img{
+            margin: 0 auto;
+            display:block;
+            transition: 2s;
+            margin-bottom: 15px;
+            max-width: 1000px;
+   
+            
+            
+        }
+        
+        .contenedor img:hover{
+            /*transform: rotate(14400deg);*/
+            transform: scale(1.03);
+            
+        }
+        
+        .zoomsombreado {
+            margin: 0 auto;
+            display:block;
+            transition: 2s;
+            margin-bottom: 15px;
+            max-width: 1000px;
+                   
+        }
+        
+        .zoomsombreado:hover{
+            /*transform: rotate(14400deg);*/
+            transform: scale(1.03);
+            box-shadow:
+                1px 1px rgba(0,0,0,0.25),
+                5px 5px rgba(0,0,0,0.55),
+                3px 3px rgba(0,0,0,0.75);
+           
+        }
+        
+        /* CSS del Indice valga la redundancia */
+        
+        .indice{           
+            margin-bottom: 15px;
+            font-size: 25px;
+            text-decoration:none;
+            color: black;
+            transition:all ease-in-out 0.4s;
+            text-align: center;
+            border-width: thick;
+            display: block;
+            margin-left: 35%;
+            margin-right: 35%;
+            
+        }
+        
+        .indice:hover{
+            transform: scale(1.05);
+         /*   border-radius: 50%;
+            background-color: #99a38d;   */    
+        }
+        
+        /* Parte de los bordes */
+        
+        .redondito{
+            padding:50px;
+            border-radius: 30%;
+            background-color: rgba(255,0,0,0.7);
+            max-width: 300px;
+            transition: 1s;
+        }
+        
+        .redondito:hover{
+            background-color: rgba(255,0,0,1);
+            transform: scale(1.02);
+            border-radius: 50%;
+        }
+        
+        .redondito_sombreado{
+            padding:50px;
+            border-radius: 30%;
+            background-color: rgba(255,0,0,0.7);
+            max-width: 300px;
+            transition: all 1s;
+            box-shadow: 7px 7px 5px 3px rgba(0,0,0,0.75);
+        }
+        
+        .redondito_sombreado:hover{
+            background-color: rgba(255,0,0,1);
+            box-shadow: 9px 9px 7px 5px rgba(0,0,0,0.75);
+        }
+
+        .redondito_imagen{
+            border:10px solid transparent;
+            padding: 10px;
+            border-image: url(imagenes/bordes/borde.png) 30 round;
+            transition: all ease-in-out 1s;
+        }
+        
+        .redondito_imagen:hover{
+            /*background-color:#3d726f;*/
+            border-image: url(imagenes/bordes/borde2.png) 30 round;
+        }
+        
+        
+        /* Parte de los fondos */
+        
+        #bgfondo {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(imagenes/fondos/fondodeprueba.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 400px;
+            min-height: 400px;
+            margin: 0 auto;
+            transition:  1s;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        #bgfondo:hover{
+            max-width:700px;
+        }
+
+        #bgfondo_repetido {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(imagenes/fondos/fondodeprueba.jpg);
+            background-repeat: repeat;
+            background-size: 400px 200px;
+            max-width: 400px;
+            min-height: 400px;
+            margin: 0 auto;
+            transition: 1s;
+            color:white;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        #bgfondo_repetido:hover {
+            max-width: 700px;
+        }
+        
+        .bg_origin_ejemplo{
+            border: 20px dotted black;
+            padding:25px;
+            background-image:linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%), linear-gradient(to bottom, rgba(59, 59, 59, 1) 0%, rgba(59, 59, 59, 1) 100%);
+            background-clip: content-box, padding-box;
+            
+        }
+        
+        
+        /* Degradados Y Gradientes */
+        
+                                        /* Lineales */
+        
+        .degradado_basico{
+            padding: 25px;
+            min-height: 50px;
+            background: linear-gradient(blue, aqua);
+      
+        }
+        
+        .degradado_basico_derecha{
+            padding: 25px;
+            min-height: 50px;
+            background: linear-gradient(to right,rgb(0,0,255), #592020);
+      
+        }
+        
+        .degradado_basico_grados {
+            padding: 25px;
+            min-height: 50px;
+            background: linear-gradient(-90deg, rgba(0,0,255,1), #FFFFFF);
+        }
+        
+        .degradado_multicolor{
+            padding: 25px;
+            min-height: 100px;
+            background: linear-gradient(to bottom, aqua, #FFFFFF, rgb(0,0,255), rgba(0,0,0,1) , purple);
+        }
+                                        /* Radiales */
+  
+        .degradado_radial{
+            padding:25px;
+            min-height: 250px;
+            max-width: 450px;
+            background: radial-gradient(circle, blue,aqua);
+            border-radius: 0%;
+        }
+        
+        
+        /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
+        
+@media only screen and (max-width: 700px) {
+    
+    .contenedor img {
+        max-width: 450px;
+    }
+    
+    p{
+        max-width: 500px;
+    }
+
+}
+    </style>
+
+
+
+    </head>
+    
+    <body>
+    
+        <div class="contenedor" id="suave_1">
+    
+
+            
+            <h1> Presentación </h1>
+            <h1> de </h1>
+            
+            <img src="imagenes/css3.png">
+            
+        </div>
+        
+        <div class="contenedor" id="suave_2">
+        
+            <h1> Índice </h1>
+
+            
+            <a href="#intro" class="indice"> 1º &nbsp;&nbsp;Introdución </a>
+            <a href="#bordes" class="indice">2º  &nbsp;&nbsp; Bordes</a>
+            <a href="#fondos" class="indice">3º &nbsp;&nbsp; Fondos</a>
+            <a href="" class="indice">4º &nbsp;&nbsp; Efectos de texto</a>
+            <a href="" class="indice">5º &nbsp;&nbsp; Transformaciones 2D</a>
+            <a href="" class="indice">6º &nbsp;&nbsp; Transformaciones 3D</a>
+            <a href="" class="indice">7º &nbsp;&nbsp; Transiciones</a>
+            <a href="" class="indice">8º &nbsp;&nbsp; Animaciones</a>
+            <a href="" class="indice">9º &nbsp;&nbsp; Columnas Multiples</a>
+            <a href="" class="indice">10º &nbsp;&nbsp; Interfaz de usuario</a>
+        </div>
+        
+        <div class="contenedor" id="suave_3">
+          
+            <h1 id="intro"> Introdución </h1>
+            
+            <p> 
+            
+                CSS "Cascade style sheet" es el lenguaje de hojas de estilo en cascada, creado para
+                apartar el diseño de la página de su contenido. El estandar de CSS3 esta bastante estable,
+                es mayormente soportado, pero no a tu totalidad.
+                
+            
+            </p>
+            
+            <img src="imagenes/soportecss3.png" class="zoomsombreado">
+            
+            <p> 
+            
+                Por ello y por posibles propiedades nuevas que esten en desarollo es recomendable utilizar estos prefijos
+                para cada navegador para asegurarse que funcionen lo mejor posible
+                
+            
+            </p>
+
+            <ul>
+            
+                <li> <b> -moz- </b> : &nbsp; Para Mozilla Firefox  </li>
+                <li> <b> -webkit- </b> : &nbsp;  Para Chrome y Safari </li>
+                <li> <b> -o- </b> : &nbsp; Para Opera </li>
+                <li> <b> -ms- </b> : &nbsp; Para Internet Explorer a partir del 10</li>            
+            
+            </ul>
+            
+            <p>
+            
+                Una herramienta recomendada es  <a href="https://autoprefixer.github.io/">CSS Prefixer</a>
+                que desde un editor en linea hara compatibles nuestras hojas de estilo con los navegadores
+                
+            </p>
+            
+            <p></p>
+                
+            
+            
+        </div>
+        
+        <div class="contenedor" id="suave_4">
+          
+            <h1 id="#bordes"> Bordes </h1>
+            
+            <h2>  Border-Radius </h2>
+            
+            <p> Border radius es la propiedad que redondea esquinas  </p>
+            
+            <h3> Sintaxis</h3>
+
+            <p> Border-radius: 30% </p>
+            
+            <p> El resultado a mostrar seria el siguiente </p>
+            
+            <p class="redondito"> </p>
+            
+            <br>
+            
+            <h2>  Border-Shadow </h2>
+
+            <p> Border Shadow permite aplicar sombras a nuestros elementos </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Box-Shadow: 7px 7px 5px 3px rgba(0,0,0,0.75);</p>
+            
+            <p class="redondito_sombreado"></p>
+            
+            <br>
+            
+            <h2> Border-image</h2>
+            
+            <br>
+            
+            <p> La propieda Border-image ter permite utilizar imagenes como borde de imagen</p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Border-Image: url(imagenes/borde.png) 30 round;</p>
+            
+            <br>
+            
+            <p class="redondito_imagen"> 
+            
+            Dando un resultado como este
+                
+            </p>
+            
+            <br>
+            
+            
+        </div>
+        
+        <div class="contenedor" id="suave_5">
+          
+            <h1 id="#fondos"> Fondos </h1>
+            
+            <h2> Background-Size</h2>
+            
+            <p> Esta propiedad te permite establecer las dimensiones de una imagen de fondo de el elemento marcado </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p>  Background-size: auto (Para que se adapte a el tamaño maximo del tamaño de el elemento)   </p>
+            
+            <p>  o establecer tu mismo las dimensiones </p>
+            
+            <p>  Background-Size: 400px 200px ( Ancho x Alto) </p>
+            
+            <h2> Background-Repeat</h2>
+            
+            <p> Esta propiedad especifica si el fondo se repetira o no, hasta cubrir todo el elemento </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Estan estos valores disponibles mas significativos </p>
+            
+            <ul>
+            
+                <li> <b> Repeat </b> : &nbsp; Se repetira hasta llenarlo todo </li>
+                <li> <b> Repeat-X</b> : &nbsp; Se repetira de forma horizontal </li>
+                <li> <b> Repeat-Y</b> : &nbsp;  Se repetira de forma vertital</li>
+                <li> <b> No-Repeat</b> : &nbsp; No se repite </li>
+                     
+            </ul>
+            
+            <br>
+            
+            <div id="bgfondo">
+
+                Este fondo no se repite
+                
+            </div>
+            
+            <br>
+            
+            <div id="bgfondo_repetido">
+            
+            
+                Este fondo si se repite
+                
+            </div>
+            
+            <br>
+            
+            <h7> Multiples Fondos  </h7>
+        
+            <p> CSS3 da la posibilidad de establecer fondos multiples en los elementos usando estas 4 propiedades </p>
+            
+            
+            
+            <ul>
+            
+                <li> <b> Background-Size </b> (Ya explicado) </li>
+                <li> <b> Background-Origin </b> </li>
+                <li> <b> Background-Clip </b> </li>
+                <li> <b> Background-Position </b></li>
+            
+            </ul>
+        
+            <br>
+            
+            <h2> Background-Origin</h2>
+            
+            <p> Esta propiedad establece desde donde empieza la imagen de fondo</p>
+            
+            <h2> Background-Clip </h2>
+            
+            <p> Establece hasta donde se extiende el elemento </p>
+            
+            <p> Ambos coinciden en las mismos atributos</p>
+            
+            <ul>
+            
+                <li> <b>Padding-Box</b> : &nbsp; Empieza desde el padding o se extiende hasta el </li>
+                <li> <b>Border-Box</b> : &nbsp; Empieza desde el borde o se extiende hasta el </li>
+                <li> <b>Content-Box</b> : &nbsp; Empieza desde el contenido o se extiende hasta el </li>
+                
+        
+            </ul>
+
+            <br>
+            
+            <p class="bg_origin_ejemplo"> Este es el contenido </p>
+            
+            <br>
+            
+            <h2> Background-Position </h2>
+            
+            <p> Define la posición de el fondo </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Background-Position: 200px 400px ,</p>
+            
+            <p>o bien utilizar los los valores [ left | right | top | bottom| center  ] por ejemplo: </p>
+                
+            <p> Background-Position: center top;</p>
+            
+            <br>
+            
+            
+            <h7> Degradados y Gradientes </h7>
+            
+            <p>  Los degradados son un efecto de "Transicion" de color , de forma estatica </p>
+            
+            <h2> Degradados Lineales </h2>
+            
+            <p> Los degradados funcionan como un color, en el sentido de que son aplicados en propiedades como por ejemplo Background</p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Background: linear-grandient (blue, aqua);</p>
+            
+            <p class="degradado_basico"></p>
+            
+            <br>
+            
+            <p> Tambien es posible definir la direción del degradado con los los atributos</p>
+            
+            <p> To right|left|bottom|top </p>
+            
+            <p> El mismo ejemplo alpicandole  una dirección </p>
+            
+            <p>    
+            background: linear-gradient(to bottom right, rgb(0,0,255), #592020);
+            </p>
+            
+            <p class="degradado_basico_derecha"></p>
+            
+            <br>
+            
+            <p> o con grados, background: linear-gradient(-90deg, rgba(0,0,255,1), #FFFFFF);</p>
+            
+            <p class="degradado_basico_grados"></p>
+            
+            <br>
+            
+            
+            <p> Tambien es posible darle varios colores </p>
+            
+            <p>  Background: linear-gradient(to bottom, aqua, #FFFFFF, rgb(0,0,255), rgba(0,0,0,1), purple );</p>
+            
+            <p class="degradado_multicolor"> </p>
+            
+            <h2>  Degradados Radiales </h2>
+            
+            <p> El funciona igual que los lineales pero dando una forma circular </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Background: radial-gradient(blue, aqua); </p>
+            
+            <p class="degradado_radial"> </p>
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="contenedor" id="suave_1">
+          
+            <p> Parrafo en el div </p>
+            
+        </div>
+    
+    </body>
+     
+</html>
