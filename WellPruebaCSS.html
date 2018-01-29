@@ -427,7 +427,7 @@
         
         .texto_overflow_normal{
             word-wrap: break-word;
-            border:2px doted grey;
+            border:2px solid grey;
             background: white;
             max-width: 500px;
             text-overflow: normal;
@@ -436,13 +436,63 @@
         
         .texto_overflow_ellipsis{
             word-wrap: break-word;
-            border:2px doted grey;
+            border:2px solid grey;
             background: white;
             max-width: 500px;
             text-overflow: ellipsis;
             overflow: none;
   
-            ;
+            }
+        
+        /* Transformaciones 2D */
+       
+        .transform_2d_scale{
+            background-color: white;
+            width: 500px;
+            height: 300px;
+            border: 4px solid grey;
+            transition: 3s;
+        
+        }
+    
+        @keyframes scale{
+            0%{transform: scale(1,1);}
+            50%{transform: scale(2,.5);}
+            100%{transform: scale(1,1);}
+        }
+        
+        
+        .transform_2d_scale:hover{
+            animation-name: scale;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+        }
+        
+        .transform_2d_skew{
+            display: block;
+            background-color: white;
+            width: 500px;
+            height: 300px;
+            font-size: 1px;
+            border: 4px solid grey;
+            color: white;
+            margin: 0 auto;
+
+                    
+        }
+        
+        @keyframes skew{
+            0%{transform: skewX(30deg);}
+            20%{transform: skewX(-30deg);}
+            40%{transform: skewX(0deg);}
+            60%{transform: skewY(15deg)};
+            80%{transform: skewY(-15deg);}
+            100%{transform: skewY(0deg);}
+        }
+        
+        .transform_2d_skew:hover{
+            animation: skew 5s infinite;
+            
         }
         
         
@@ -827,9 +877,39 @@
         
         
             <h1> Transformaciones 2D </h1>
+                
+            <p> Efectos visuales que son 2D </p>
+        
+            <h2> Scale </h2>
+
+            <p> Aumenta el tamaño en escala indicada</p>
             
+            <h3> Sintaxis</h3>
         
-        
+            <p> Transform: scaleX(2); Tranform; scaleY(.5) </p>
+            
+            <p> o Transfrom: scale(2, .5)</p>
+            
+            <p class="transform_2d_scale"> </p>
+            
+            <h2> Skew </h2>
+            
+            <p> Tuerce el elemento </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Transform: SkewX(30deg); </p>
+            
+            <p> Transform: SkewY(15deg); </p>
+            
+            <p class="transform_2d_skew"> </p>
+            
+            <br>
+            
+            <br>
+            
+            <br>
+            
         </div>
     
     </body>
