@@ -399,6 +399,32 @@
             background: repeating-radial-gradient(black, aqua 10%, blue 15%);
         }
         
+        
+        /* Efectos de texto */
+        
+        .texto_sombreado{
+            text-shadow: 5px 5px 5px #000000;  
+            transition: 0.4s;
+        }
+        
+        .texto_sombreado:hover{
+            text-shadow: 7px 7px 7px #000000;
+        }
+        
+        .texto_wrap_normal{
+            word-wrap: normal;
+            border: 1px solid black;
+            background: white;
+            max-width: 500px;
+        }
+        
+        .texto_wrap_break{
+            word-wrap: break-word;
+            border: 1px solid black;
+            background: white;
+            max-width: 500px;
+        }
+        
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
 @media only screen and (max-width: 700px) {
@@ -734,8 +760,42 @@
         
         <div class="contenedor" id="suave_1">
           
-            <p> Parrafo en el div </p>
+            <h1> Efectos de texto </h1>
             
+            <h2> Text-Shadow </h2>
+            
+            <p> Como la propiedad anteriormente explicada, permite aplicarle sombras, pero en este caso a los textos </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Text-shadow: 15px 10px 5px #FF0000;  </p>
+            
+            <p class="texto_sombreado"> Daria este efecto </p>
+            
+            <h2> Word-Wrap </h2>
+            
+            <p> Permite una palabra larga "partirse" y bajarse al siguiente renglon </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p>  Word-Wrap: break-word; </p>
+            
+            <p> <b> Word-Wrap: normal </b></p>
+            
+            <p class="texto_wrap_normal"> Si alaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargas la palabra se ve el efecto </p>
+            
+            <p> <b> Word-Wrap: break-word</b></p>
+            
+            <p class="texto_wrap_break"> Si alaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargas la palabra se ve el efecto </p>
+            
+            
+            <h2> Text-Overflow </h2>
+            
+            <p> Te permite limimtar la anterior poniendo automaticamente los puntos suspensivos </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Text-Overflow: ellipsis</p>
         </div>
     
     </body>
