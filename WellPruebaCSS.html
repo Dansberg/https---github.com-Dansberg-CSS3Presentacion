@@ -504,7 +504,10 @@
         
         }
         
-       /* @keyframes rotate{
+       /* 
+        Esta no funcionaba bien
+        
+        @keyframes rotate{
             0%{transform: rotate(0deg);}
             25%{transform: rotateZ(360deg); background-color: red;}
             35%{transform: rotateZ(-360deg); background-color: red;}
@@ -519,9 +522,9 @@
         
             @keyframes rotate {
             0% {transform: rotateZ(0);}
-            25%{transform: rotateZ(360deg);}
-            35%{transform: rotateY(0);}
-            65%{transform: rotateY(180deg);}
+            20%{transform: rotateZ(360deg);}
+            40%{transform: rotateY(0);}
+            60%{transform: rotateY(180deg);}
             80%{transform: rotateX(0);}
             100% {transform: rotateX(180deg);}    
         
@@ -533,6 +536,31 @@
             animation-duration: 10s;
             animation-iteration-count: infinite;
         }
+        
+        
+            .transform_2d_translate{
+                
+            background-color: white;
+            width: 500px;
+            height: 300px;
+            border: 4px solid grey;
+        }
+        
+            @keyframes transform{
+            0%{transform: translate(0px);}
+            25%{transform: translate(200px);}
+            50%{transform: translate(0px);}
+            75%{transform: translate(-200px);}
+            100{transform: translate(0px);}
+        }
+        
+        .transform_2d_translate:hover{
+            animation-name: transform;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+            
         
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
@@ -948,7 +976,7 @@
             
             <h3> Sintaxis </h3>
             
-            <p> Transform: rotateZ(360deg) / Transfrom: rotateZ(-360deg) [Rojo] </p>
+            <p> Transform: rotateZ(360deg) </p>
             
             <p> Transform: rotateY(180deg) </p>
             
@@ -961,7 +989,21 @@
             <p> Mueve el elemento </p>
             
             <h3> Sintaxis </h3>
+        
+            <p> Transform: translateX(80px) / Transfrom: TranslateY(100px)</p>
             
+            <p> Transfrom: translate(200px) / (-200px) </p>
+            
+            <p class="transform_2d_translate"> </p>
+            
+            <br> 
+            
+        </div>
+        
+        <div class="contenedor" id="suave_3">
+        
+        
+            <h1> Transformaciones 3D </h1>
             
             
         </div>
