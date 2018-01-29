@@ -425,6 +425,27 @@
             max-width: 500px;
         }
         
+        .texto_overflow_normal{
+            word-wrap: break-word;
+            border:2px doted grey;
+            background: white;
+            max-width: 500px;
+            text-overflow: normal;
+            overflow: none;
+        }
+        
+        .texto_overflow_ellipsis{
+            word-wrap: break-word;
+            border:2px doted grey;
+            background: white;
+            max-width: 500px;
+            text-overflow: ellipsis;
+            overflow: none;
+  
+            ;
+        }
+        
+        
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
 @media only screen and (max-width: 700px) {
@@ -751,12 +772,7 @@
             <br>
             
             
-        </div>
-        
-        
-        
-        
-        
+        </div>               
         
         <div class="contenedor" id="suave_1">
           
@@ -796,6 +812,24 @@
             <h3> Sintaxis </h3>
             
             <p> Text-Overflow: ellipsis</p>
+            
+            <p class="texto_overflow_ellipsis">Si alaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargaaaaaaaaaaas la palabra se ve el efecto"..."  </p>
+            
+            <p > Text-Overflow: normal</p>
+            
+            <p class="texto_overflow_normal">Si alaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargaaaaaaaaaaas la palabra se ve el efecto","  </p>
+            
+            <br>
+            
+        </div>
+        
+        <div class="contenedor" id="suave_2">
+        
+        
+            <h1> Transformaciones 2D </h1>
+            
+        
+        
         </div>
     
     </body>
