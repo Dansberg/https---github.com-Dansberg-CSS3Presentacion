@@ -1,0 +1,111 @@
+Apuntes de Certificados de Open Suse
+
+Estructura PKI
+
+
+    1º Generar Autoridad Certificadora (CA [Certificate Autority])
+    
+    2º Actualizar la lista de Revocaciones (CRL)
+    
+    3º Solicitar el certificado (Al ser en local es inmediato)
+    
+    4º Firmar el Certificado
+                               { - Fichero
+    5º Exportar el Certificado { - Servidor Común * (Este es el que vamos a utilizar)
+                               { - LDAP
+                               { - ...
+                        
+
+
+-----------------------------------------------------------------------------------------
+
+        *  Servidor HTTPS
+        
+    1º Activar Módulo SSL
+    
+    2º Abrir Puerto 443
+    
+    3º Editar el fichero "VHOSTSSL.CONF"
+    
+            3.1º Añadimos Rutas del Certificado
+            
+            3.2º Añadimos Rtas de Claves del Certificado
+            
+    4º Reinicar Apache
+    
+    
+    Tambien se puede hacer con un script de SUSE automatico
+    
+    
+-------------------------------------------------------------------------------------------------
+
+
+Para generar el certificado de Apache de usa el comando Keytool con las instrucciones de que estan en "Tomcat_SSL.pdf"
+
+hacer caso a la nota de añadir "-keyalg RSA" o algo pareceido en el Keytool para que no de error
+
+Ejemplo de ello
+
+    "keytool -genkey -keyalg RSA -alias Alvaro -keypass Alvarotomcat -keystore ("Ruta de alguna carpeta") alvarostore.bin -storepass alvarotomcat"
+    
+    Y respondemos a las preguntas que salen
+    
+Desde el file manager super user mnode copiamos el bin a una carpeta segura (El lo copia a la personal de adminitrador)
+
+Y desde el archivo server.xml se cambia la ruta a donde esta el archivo a donde dejastes el bin 
+
+En descomentar el  "Connector port="8443" y lo rellenamos con nuestros datos y poniendo la ruta bien
+
+Y se reinicia el tomcat desde el Yast 
+
+La dirección correcta seria "https://localhost:8443" saldra que no es segura, y añadimos la excepción desde firefox   
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+ GlassFish
+ 
+ 
+ Es solo quitar el tomcat y activar el glassfish desde la configuración
+ 
+ 
+ Desde el propio paner de administración de glassfish "localhost:4848" en configurations, server-config, network config, network listener y hay ya estan los listener y ver que los tenemos bien puestos
+ 
+ 
+ 
+ 
+ 
+ -----------------------------------------------------------------------------------------------------------------
+ 
+ Desde el yast con la vista de patrones buscas "servidor de archivos" 
+ 
+ Y ya apareceran "Servidor Samba" "Servidor FTP"
+ 
+ En servidor Ftp en general ya podemos configurarlo, Sobre todo la ruta es lo mas interesante, la ruta base es "srv/ftp"
+ 
+ En general desde hay podemos poner la Unmask podemos configurar los permisos de los usuarios
+ 
+ 
+ 
+ 
+ 
+ ------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ Cogemos los dos paquetes de joomla y los abrimos con Yast (Los dos a la vez) continuamos
+ 
+ 
+ 
+ ESTO YA NO
+   
+ Agregamos usuarios desde PhpmyAdmin (Hay una opción de agregar nuevo usuario desde el propio PhpMyAdmin)
+ 
+ 
+ POR AQUI SE SIGUE
+ 
+ Coges el archivo de joomla lo llevas a la carpeta "/srv/www" creamos la carpeta de joomla  y la descomprimimos hay, reiniciamos el apache
+ 
+ Y ponemos "localhost/joomla/installation" y ya lo configuramos desd ehay
