@@ -446,7 +446,7 @@
         
         /* Transformaciones 2D */
        
-        .transform_2d_scale{
+        .transform_scale{
             background-color: white;
             width: 500px;
             height: 300px;
@@ -462,13 +462,13 @@
         }
         
         
-        .transform_2d_scale:hover{
+        .transform_scale:hover{
             animation-name: scale;
             animation-duration: 5s;
             animation-iteration-count:infinite;
         }
         
-        .transform_2d_skew{
+        .transform_skew{
             display: block;
             background-color: white;
             width: 500px;
@@ -490,12 +490,12 @@
             100%{transform: skewY(0deg);}
         }
         
-        .transform_2d_skew:hover{
+        .transform_skew:hover{
             animation: skew 5s infinite;
             
         }
         
-        .transform_2d_rotate{
+        .transform_rotate{
             background-color: white;
             width: 300px;
             height: 300px;
@@ -531,14 +531,14 @@
         
         }
         
-            .transform_2d_rotate:hover{
+            .transform_rotate:hover{
             animation: rotate;
             animation-duration: 10s;
             animation-iteration-count: infinite;
         }
         
         
-            .transform_2d_translate{
+            .transform_translate{
                 
             background-color: white;
             width: 500px;
@@ -554,13 +554,36 @@
             100{transform: translate(0px);}
         }
         
-        .transform_2d_translate:hover{
+        .transform_translate:hover{
             animation-name: transform;
             animation-duration: 5s;
             animation-iteration-count: infinite;
         }
         
             
+       .transform_origin{
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            border: 4px solid grey;
+            transition: 3s;
+            transform-origin: left top;
+
+        }
+        
+        @keyframes rotate_origin {
+            0% {transform: rotate(0);}
+            50%{transform: rotate(360deg);}
+            100%{transform: rotate(0);}
+        }
+
+        
+        .transform_origin:hover{
+            animation: rotate_origin;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
         
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
@@ -603,12 +626,11 @@
             <a href="#bordes" class="indice">2º  &nbsp;&nbsp; Bordes</a>
             <a href="#fondos" class="indice">3º &nbsp;&nbsp; Fondos</a>
             <a href="" class="indice">4º &nbsp;&nbsp; Efectos de texto</a>
-            <a href="" class="indice">5º &nbsp;&nbsp; Transformaciones 2D</a>
-            <a href="" class="indice">6º &nbsp;&nbsp; Transformaciones 3D</a>
-            <a href="" class="indice">7º &nbsp;&nbsp; Transiciones</a>
-            <a href="" class="indice">8º &nbsp;&nbsp; Animaciones</a>
-            <a href="" class="indice">9º &nbsp;&nbsp; Columnas Multiples</a>
-            <a href="" class="indice">10º &nbsp;&nbsp; Interfaz de usuario</a>
+            <a href="" class="indice">5º &nbsp;&nbsp; Transformaciones </a>
+            <a href="" class="indice">6º &nbsp;&nbsp; Transiciones</a>
+            <a href="" class="indice">7º &nbsp;&nbsp; Animaciones</a>
+            <a href="" class="indice">8º &nbsp;&nbsp; Columnas Multiples</a>
+            <a href="" class="indice">9º &nbsp;&nbsp; Interfaz de usuario</a>
         </div>
         
         <div class="contenedor" id="suave_3">
@@ -942,9 +964,9 @@
         <div class="contenedor" id="suave_2">
         
         
-            <h1> Transformaciones 2D </h1>
+            <h1> Transformaciones  </h1>
                 
-            <p> Efectos visuales que son 2D </p>
+            <p> Son efectos visuales </p>
         
             <h2> Scale </h2>
 
@@ -956,7 +978,7 @@
             
             <p> o Transfrom: scale(2, .5)</p>
             
-            <p class="transform_2d_scale"> </p>
+            <p class="transform_scale"> </p>
             
             <h2> Skew </h2>
             
@@ -968,7 +990,7 @@
             
             <p> Transform: SkewY(15deg); </p>
             
-            <p class="transform_2d_skew"> </p>
+            <p class="transform_skew"> </p>
             
             <h2> Rotate</h2>
             
@@ -982,7 +1004,7 @@
             
             <p> Transfrom: rotateX(180deg) </p>           
             
-            <p class="transform_2d_rotate"></p>
+            <p class="transform_rotate"></p>
             
             <h2> Translate </h2>
             
@@ -994,17 +1016,45 @@
             
             <p> Transfrom: translate(200px) / (-200px) </p>
             
-            <p class="transform_2d_translate"> </p>
+            <p class="transform_translate"> </p>
             
             <br> 
+            
+            <h2> Tranform-Origin </h2>
+            
+            <p> Establece el centro de el elemento </p>
+
+            <h3> Sintaxis </h3>
+            
+            <p> Transform.origin: left top; | Transform.origin: 0px 0px;</p>
+            
+            <p class="transform_origin"> </p>
+            
+            <br>
             
         </div>
         
         <div class="contenedor" id="suave_3">
         
         
-            <h1> Transformaciones 3D </h1>
+            <h1> Transiciones </h1>
             
+            <p> Son los efectos que se muestran mientras un elemento esta siendo cambiado de estilo </p>
+            
+            <style> p{ transition}</style>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Tiene 4 paramaetros, que se pueden aplicar en la misma etiqueta o separado:</p>
+            
+            <ul>
+            
+                <li> Transition-Delay: &nbsp; </li>
+                <li> Transition-Duration: &nbsp; </li>
+                <li> Transition-Property: &nbsp; </li>
+                <li> Transition-Timming-Function: &nbsp; </li>
+            
+            </ul>
             
         </div>
     
