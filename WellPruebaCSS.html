@@ -31,7 +31,7 @@
         
         .contenedor ul{
             margin-left: 35%;
-            margin-right: 20%;
+            margin-right: 10%;
             font-size: 25px;
             margin-bottom: 10px;
         }
@@ -585,6 +585,76 @@
         }
         
         
+        /* Transiciones */
+        
+        .transition_linear{
+            background: linear-gradient(to right,blue, aqua);
+            width: 200px;
+            height: 150px;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+        }
+        
+        .transition_linear:hover{
+            
+            width: 70%;
+        }
+        
+        
+        .transition_ease{
+            background: linear-gradient(to right, blue, aqua);
+            width: 200px;
+            height: 150px;
+            transition-duration: 3s;    
+            transition-timing-function: ease;
+        }
+        
+        .transition_ease:hover{
+            
+            width: 70%;
+        }
+        
+        .transition_ease_in{
+            background: linear-gradient(to right, blue, aqua);
+            width: 200px;
+            height: 150px;
+            transition-duration: 3s;    
+            transition-timing-function: ease-in;
+        }
+        
+        .transition_ease_in:hover{
+            
+            width: 70%;
+        }
+        
+        .transition_ease_out{
+            background: linear-gradient(to right, blue, aqua);
+            width: 200px;
+            height: 150px;
+            transition-duration: 3s;  
+            transition-timing-function: ease-out;
+        }
+        
+        .transition_ease_out:hover{
+           
+            width: 70%;
+        }
+        
+        
+        .transition_ease_in_out{
+            background: linear-gradient(to right, blue, aqua);
+            width: 200px;
+            height: 150px;
+            transition-duration: 3s; 
+            transition-timing-function: ease-in-out;
+         
+        }
+        
+        .transition_ease_in_out:hover{
+            
+            width: 70%;
+        }
+        
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
 @media only screen and (max-width: 700px) {
@@ -1041,20 +1111,46 @@
             
             <p> Son los efectos que se muestran mientras un elemento esta siendo cambiado de estilo </p>
             
-            <style> p{ transition}</style>
-            
             <h3> Sintaxis </h3>
             
             <p> Tiene 4 paramaetros, que se pueden aplicar en la misma etiqueta o separado:</p>
             
             <ul>
             
-                <li> Transition-Delay: &nbsp; </li>
-                <li> Transition-Duration: &nbsp; </li>
-                <li> Transition-Property: &nbsp; </li>
-                <li> Transition-Timming-Function: &nbsp; </li>
-            
+                <li> Transition-Delay: El retraso </li>
+                <li> Transition-Duration: La duración de la transición </li>
+                <li> Transition-Property: La propiedad que queremos cambiar </li>
+                <li> Transition-Timming-Function: "Define" la aceleración de la animación</li>
+                            
             </ul>
+            
+            <br>
+            
+            <img src="imagenes/transition-timming.png">
+            
+            <br>
+            
+            <p> Linear </p>
+            
+            <p class="transition_linear"></p>
+            
+            <p> Ease </p>
+            
+            <p class="transition_ease"> </p>
+
+            <p> Ease-In </p>
+            
+            <p class="transition_ease_in"> </p>
+            
+            <p> Ease-Out </p>
+            
+            <p class="transition_ease_out"></p>
+            
+            <p> Ease-In-Out </p>
+            
+            <p class="transition_ease_in_out"></p>
+            
+            <br>
             
         </div>
     
