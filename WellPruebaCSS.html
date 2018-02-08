@@ -699,7 +699,30 @@
         }
         
         
+        /* Interfaz de Usuario */
         
+        .resize{
+        
+            background:white;
+            border: 4px solid grey;
+            height: 150px;
+            width: 400px;
+            resize: both;
+            overflow: auto;
+            transition: 0s;
+        }
+        
+        .outline{
+        
+            background:white;
+            border: 4px solid grey;
+            height: 150px;
+            width: 400px;
+            outline: 5px solid green;
+            outline-offset: 20px;
+        }
+        
+
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
 @media only screen and (max-width: 700px) {
@@ -1287,7 +1310,32 @@
         
             <h1> Interfaz de Usuario </h1>
                 
+            <h2> Resize</h2>
+            
+            <p> Te permite reescalar el tamaño de el elemento </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Resize: both (El usado en este ejemplo) | vertical | horizontal</p>
         
+            <p class="resize"></p>
+            
+            <h2> Outline </h2>
+            
+            <p> Te permite establecer otro borde mas y especificar la distancia </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Outline: 5px solid green; </p>
+            <p> Outline-offset: 20px; </p>
+            
+            <br>
+            
+            <p class="outline"></p>
+            
+            <br>
+            
+
         </div>
     
     </body>
