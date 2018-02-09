@@ -27,61 +27,8 @@
           
         }
         
-        #nav{
-            
-            background: #23282d;            
-            border-color: #23282d;
-            border-radius: 0%; 
-            transform: rotate(90deg);
-            float: left;
-            position: fixed;
-            margin-top: 18.5%;
-            margin-left: -19.7%;
-            height: 22%;      
-            width: 660px;
-            text-align: left;
-            border-top: 5px solid grey;
-        }
-        
-        #nav tr{
-            background-color: #23282d;
 
-            
-        }
-        
-        #nav a{
-            
-            text-decoration: none;
-            color: white;
-            cursor: pointer;
-            font-size: 18px;
-            transition: 0.4s;
-            max-width: 65px;
-            min-width: 65px;
-            text-align: center;
-            transform: rotate(-90deg);
-            margin-top: 30px;
-          
-        }
-        #nav td{
-            border-radius: 0% ;
-            border-left: 2px solid grey;
-        }
-        
-        
-        #nav a:hover{
-            color:orange;
-        }
-      
-        #nav td{
-            transition: 0.4s;
-        }
-        
-        #nav td:hover{
-            background-color: #34373a; 
-            
-        }
-          
+          /*
         .enlace{
             
             margin: 0 auto;
@@ -92,8 +39,8 @@
             text-decoration: none;
             background-color: #34373a;
             width: 200px;
-            border-radius: 30%;
-            transition: 2s;
+            border-radius: 5%;
+            transition: 0.4s;
             font-size: 25px;
             border: 1px solid black;
             box-shadow: 4px 4px 2px 1px rgba(0,0,0,0.75);
@@ -105,6 +52,23 @@
             box-shadow: 6px 6px 4px 2px rgba(0,0,0,0.75);
             color: orange;
             background-color: #23282d;
+            
+        }
+        
+        */
+        
+        .enlace{
+            
+            color: black;
+            font-size: 35px;
+            text-shadow: rgba(0,0,0,0.4) 3px 5px 1px;
+            max-width: 500px;
+            transition:0.4s;
+        }
+        
+        .enlace:hover{
+            color: rgba(48,38,12,1);
+            text-shadow: rgba(0,0,0,0.7) 3px 5px 1px;
             
         }
         
@@ -141,10 +105,10 @@
         }
         
         .tabla{
-            width:88%;
+            width:100%;
             float: right;
-            margin-right: 1%;
             border-color: black;
+            border: 2px solid black;
             background-color: black;
             box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.7)
         }
@@ -156,6 +120,7 @@
         }
         .tabla td a{
             color:#002c59;
+            
         }
         
         .tabla td a:hover{
@@ -165,40 +130,110 @@
         
         .tabla td{
             background-color:#e5e5e5;
+            border: 1px solid black;
         }
+        
+        
+        /* Copia de W3C */
+        
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+}
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 29px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: orange;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        
+        .sidenavmenu {
+            font-size:50px;
+            cursor:pointer;
+            color: black;
+            position: fixed;
+            background:transparent;
+            margin-top: -8px;
+            margin-left: -8px;
+            transition: 0.3s;
+        }
+        
+        
+        .sidenavmenu:hover{
+            color:darkorange;
+        
+        }
+        
+        
     </style>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        
+    </script>
+     
+    
     
 </head>
     
     
 <body>
     
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+      
+        <a href="#">Administrar Imagenes</a>
+        <a href="#">Administrar Audios</a>
+        <a href="#">Administrar Vídeos</a>
+        <a href="#">Administrar Escenas</a>
+        <a href="#">Administrar Hotspots</a>
+        <a href="#">Administrar Usuarios</a>
+        <a href="#">Administrar Bibilioteca </a>
+        
+    </div>
+    
+    <span class="sidenavmenu" onclick="openNav()">&#9776; Menu </span>
 
     
     
-    
-    
-    <table align="center"  id="nav">
-    
-    <tbody><tr>
-        
-    <td><a href="...360/imagen">Administrar imágenes</a></td>
-    
-    <td><a href="...360/audio">Administrar audios</a></td>
-    
-    <td><a href="...360/video">Administrar vídeos</a></td>
-    
-    <td><a href="...360/escenas">Administrar escenas</a></td>
-    
-    <td><a href="...360/hotspots">Administrar hotspots</a></td>
-    
-    <td><a href="...360/usuario">Administrar usuarios</a></td>
-    
-    <td><a href="...360/biblioteca">Administrar biblioteca</a></td>
-    
-    </tr>
-    
-    </tbody></table>
+   
     
     <br>
     <br>
@@ -209,7 +244,7 @@
     <br>
     
 
-    <table border="2px solid" align="center" class="tabla"><tbody><tr> 
+    <table  align="center" class="tabla"><tbody><tr> 
 	  <th> Id Hotspot </th>
 	  <th> Descripcion </th> 
 	  <th> Pitch </th>
