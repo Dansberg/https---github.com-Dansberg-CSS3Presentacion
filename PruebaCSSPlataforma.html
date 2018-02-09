@@ -4,6 +4,19 @@
 
     <title> Prueba CSS</title>
     
+    <script> 
+    
+    
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+    
+    </script>
+    
     <style>
     
         
@@ -14,7 +27,7 @@
           
         }
         
-        .nav{
+        #nav{
             
             background: #23282d;            
             border-color: #23282d;
@@ -30,13 +43,13 @@
             border-top: 5px solid grey;
         }
         
-        .nav tr{
+        #nav tr{
             background-color: #23282d;
 
             
         }
         
-        .nav a{
+        #nav a{
             
             text-decoration: none;
             color: white;
@@ -50,21 +63,21 @@
             margin-top: 30px;
           
         }
-        .nav td{
+        #nav td{
             border-radius: 0% ;
             border-left: 2px solid grey;
         }
         
         
-        .nav a:hover{
+        #nav a:hover{
             color:orange;
         }
       
-        .nav td{
+        #nav td{
             transition: 0.4s;
         }
         
-        .nav td:hover{
+        #nav td:hover{
             background-color: #34373a; 
             
         }
@@ -160,7 +173,12 @@
     
 <body>
     
-    <table align="center"  class="nav">
+
+    
+    
+    
+    
+    <table align="center"  id="nav">
     
     <tbody><tr>
         
