@@ -10,16 +10,15 @@
         /* Llamarlo luego "admin_style.css" */
     
         body{
-            background-color: rgba(0,0,0,0.8);
+            background-image: url(0feb7e13a3ab847d7f8fadbfe6e980f1.jpg);
           
         }
         
         .nav{
             
-            background: black;            
-            border-color: transparent;
+            background: #23282d;            
+            border-color: #23282d;
             border-radius: 0%; 
-            box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.75);
             transform: rotate(90deg);
             float: left;
             position: fixed;
@@ -27,10 +26,12 @@
             margin-left: -19.7%;
             height: 22%;      
             width: 660px;
+            text-align: left;
+            border-top: 5px solid grey;
         }
         
         .nav tr{
-            background-color: dimgrey;
+            background-color: #23282d;
 
             
         }
@@ -38,7 +39,7 @@
         .nav a{
             
             text-decoration: none;
-            color: black;
+            color: white;
             cursor: pointer;
             font-size: 18px;
             transition: 0.4s;
@@ -46,10 +47,12 @@
             min-width: 65px;
             text-align: center;
             transform: rotate(-90deg);
+            margin-top: 30px;
           
         }
         .nav td{
-            border-radius: 5% ;
+            border-radius: 0% ;
+            border-left: 2px solid grey;
         }
         
         
@@ -62,7 +65,8 @@
         }
         
         .nav td:hover{
-            background-color: darkslategrey;            
+            background-color: #34373a; 
+            
         }
           
         .enlace{
@@ -70,10 +74,10 @@
             margin: 0 auto;
             display: block;
             text-align: center;
-            color: black;
+            color: white;
             cursor: pointer;
             text-decoration: none;
-            background-color: grey;
+            background-color: #34373a;
             width: 200px;
             border-radius: 30%;
             transition: 2s;
@@ -87,6 +91,7 @@
             transform: scale(1.05);
             box-shadow: 6px 6px 4px 2px rgba(0,0,0,0.75);
             color: orange;
+            background-color: #23282d;
             
         }
         
@@ -121,6 +126,7 @@
         .tabla tr:last-child{
             height: 200px;
         }
+        
         .tabla{
             width:88%;
             float: right;
@@ -130,8 +136,23 @@
             box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.7)
         }
     
- 
+        .tabla th{
+            background: #23282d;
+            color:  white;
+            height: 50px;
+        }
+        .tabla td a{
+            color:#002c59;
+        }
         
+        .tabla td a:hover{
+            color:#001021;
+            transform: scale(1.04);
+        }
+        
+        .tabla td{
+            background-color:#e5e5e5;
+        }
     </style>
     
 </head>
@@ -139,7 +160,7 @@
     
 <body>
     
-    <table align="center" border="2px solid" class="nav">
+    <table align="center"  class="nav">
     
     <tbody><tr>
         
@@ -171,19 +192,19 @@
     
 
     <table border="2px solid" align="center" class="tabla"><tbody><tr> 
-	  <td> Id Hotspot </td>
-	  <td> Descripcion </td> 
-	  <td> Pitch </td>
-	  <td> Yaw </td>
-	  <td> cssClass </td>
-	  <td> clickHandlerFunc </td>
-	  <td> clickHandlerArgs </td>
-	  <td> sceneId </td>
-	  <td> targetPitch </td>
-	  <td> targetYaw </td>
-	  <td> tipo</td>
-	  <td> Borrar Hotspot </td>
-	  <td> Modificar Hotspot </td>
+	  <th> Id Hotspot </th>
+	  <th> Descripcion </th> 
+	  <th> Pitch </th>
+	  <th> Yaw </th>
+	  <th> cssClass </th>
+	  <th> clickHandlerFunc </th>
+	  <th> clickHandlerArgs </th>
+	  <th> sceneId </th>
+	  <th> targetPitch </th>
+	  <th> targetYaw </th>
+	  <th> tipo</th>
+	  <th> Borrar Hotspot </th>
+	  <th> Modificar Hotspot </th>
 	  </tr><tr>
 	<td align="center">1 </td>
 	<td align="center">   </td>
