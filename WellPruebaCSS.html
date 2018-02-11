@@ -750,6 +750,40 @@
             outline-offset: 20px;
         }
         
+        
+        /* Parte de los Media-Queries */
+        
+        
+        .ejemplo_media{
+            background:white;
+            width: 500px;
+            border: 5px solid grey;
+            height: 300px;
+            overflow: auto;
+            transition: 2s;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        
+        @media only screen and (max-width: 900px){
+              
+            
+        .ejemplo_media{
+            background:black;
+            color:white;
+            border: 5px solid grey;
+            height: 300px;
+            overflow: auto;
+            transition: 0s;
+            text-align: left;
+            font-size: 25px;
+            border: 5px dotted red;
+        }
+         
+            
+        }
+        
 
         /* Media Query por si pone a media pantalla que las imagenes y los parrafos se adapten */
         
@@ -1406,6 +1440,19 @@
             <h1> Media-Queries</h1>
             
             <p> Los Media-Queries son una herramienta que permite intercambiar bloques de código segun segun la condición </p>
+            
+            <h3> Sintaxis </h3>
+            
+            <p> Media only screen and (max-width: 900px){ </p>
+                
+            <p>  Aqui ponemos los estilos que serian si la pantalla pasase a ser menos de 900px </p>
+                
+            <p>    }</p>
+            
+            <p class="ejemplo_media"> En astrofísica, se denomina zona de habitabilidad estelar a la región alrededor de una estrella en la que el flujo de radiación incidente permitiría la presencia de agua en estado líquido sobre la superficie de cualquier planeta (o satélite) rocoso que se encontrase en ella y que contase con una masa comprendida entre 0,5 y 10 M⊕ y una presión atmosférica superior a 6,1 mbar, correspondiente al punto triple del agua a una temperatura de 273,16 K </p>
+            
+            <br> <br>
+            
         
         </div>
     
