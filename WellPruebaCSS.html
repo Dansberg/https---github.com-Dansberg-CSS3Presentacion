@@ -246,6 +246,34 @@
             background-color: #99a38d;   */    
         }
         
+        /* Parte de los colores */
+        
+        .cromatico{
+            height: 200px;
+            width: 300px;
+            transition: 2s;
+        }
+        
+        .cromatico:hover{
+            transform: scale(4) !important;
+        }
+        
+        .color_grisaceo{
+            transition: 0.4s;
+        }
+        
+        .color_grisaceo:hover{
+            color: rgba(144,144,144,0.75)
+        }
+        
+        .color_rosita{
+            transition: 0.4s;
+        }
+        
+        .color_rosita:hover{
+            color: hsla(305, 100%, 50%, 0.65);
+        }
+        
         /* Parte de los bordes */
         
         .redondito{
@@ -825,10 +853,17 @@
                         
             <p> Funciona igual que el RGB pero con un cuarto valor que es la opacidad, que se establece  con valor desde 1 siendo opaco hasta 0 siento totalmente transparante, ahorra tener que ponerla por separada </p>
             
-            <p> RGBA(0,0,0,0.75); Seria algo grisaceo</p>
+            <p class="color_grisaceo"> RGBA(144,144,144,0.75); Daria un color gris</p>
             
             <h2> HSLA </h2>
             
+            <p> HSLA son las siglas de Hue (Matiz), Saturation (Saturación), Lightness(Luminosidad), Alpha(Opacidad) siendo estos los 4 valores que hay que darle</p>
+            
+            <p class="color_rosita"> HSLA (305, 100%, 50%, 0.65)  Daria un color Rosa </p>
+            
+            <img class="cromatico" src="imagenes/Circulo-cromatico.jpg">
+            
+            <br>
             
             
         </div>
@@ -1353,6 +1388,16 @@
             <br>
             
 
+        </div>
+        
+        <div class="contenedor" id="suave_2"> 
+        
+            <h1> Responsividad </h1>
+            
+            <h1> con </h1>
+            
+            <h1> Media-Querys</h1>
+        
         </div>
     
     </body>
