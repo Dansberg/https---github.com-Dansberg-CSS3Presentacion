@@ -27,7 +27,7 @@
         /* Llamarlo luego "admin_style.css" */
     
         body{
-            background-image: url(0feb7e13a3ab847d7f8fadbfe6e980f1.jpg);
+            background-image: url(fondo_tablas.jpg);
           
         }
         
@@ -63,16 +63,21 @@
         
         .enlace{
             
-            color: black;
+            color: white;
             font-size: 35px;
-            text-shadow: rgba(0,0,0,0.4) 3px 5px 1px;
-            max-width: 500px;
-            transition:0.4s;
+            text-decoration: none;
+            width: 400px;
+            transition:0.4s;           
+            background: #0047b3;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: inset 0px 0px 2px 1px rgba(255,255,255,1);
+            
         }
         
         .enlace:hover{
-            color: rgba(48,38,12,1);
-            text-shadow: rgba(0,0,0,0.7) 3px 5px 1px;
+            color: rgba(255,255,255,1);
+            text-shadow: rgba(255,255,255,0.6) 1px 1px 1px;
             
         }
         
@@ -86,7 +91,7 @@
             
         }
         
-        table tr{
+        .tabla tr{
             transition: 0.5s;
             background-color: grey;
             height: 40px;
@@ -104,9 +109,6 @@
             background-color: red;
         }
         
-        .tabla tr:last-child{
-            height: 200px;
-        }
         
         .tabla{
             width:100%;
@@ -114,11 +116,12 @@
             border-color: black;
             border: 2px solid black;
             background-color: black;
-            box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.7)
+            box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.7);
+            text-align: center;
         }
     
         .tabla th{
-            background: #23282d;
+            background:#0047b3;
             color:  white;
             height: 50px;
         }
@@ -134,13 +137,10 @@
         
         .tabla td{
             background-color:#e5e5e5;
-            border: 1px solid black;
+            transition:3s 1s all ease-in-out;
         }
-        
-        
-        /* Copia de W3C */
-        
-        
+  
+                
         .sidenav {
             height: 100%;
             width: 0;
@@ -148,20 +148,24 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #111;
+            background-color: #011923;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            border: 1px solid #c1c1c1;       
 }
 
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 29px;
-            color: #818181;
+            font-size: 27px;
+            color:rgba(185,195,195,0.8);
             display: block;
             transition: 0.3s;
+            text-align: center;
+            
         }
+
 
         .sidenav a:hover {
             color: orange;
@@ -175,6 +179,10 @@
             margin-left: 50px;
         }
 
+        .sidenav .closebtn:hover{
+            color:red;
+        }
+        
         @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
@@ -183,11 +191,12 @@
         .sidenavmenu {
             font-size:50px;
             cursor:pointer;
-            color: black;
-            position: fixed;
+            color:black;
             background:transparent;
             margin-top: -8px;
             margin-left: -8px;
+            transition:0.4s;
+            text-shadow: 
         }
         
         .sidenavmenu:hover{
@@ -210,17 +219,50 @@
             max-width: 180px;
         }
         
-        
-        .sidenav input:focus{
-            background-color:#302e2e;
-            color:white;
-        }
+
         
         .sidenav input::placeholder{
             color: black;
             
         }
         
+        
+        
+        /*
+        
+        
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 27px;
+    color: rgba(0,0,0,0.7);
+    display: block;
+    transition: 0.3s;
+        }
+        
+        
+        .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #011923;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+        
+        */
+        
+        .cerrarses a:hover{
+           color:red;
+        }
+        
+        
+  
     </style>
     
     <script>
@@ -244,22 +286,24 @@
     
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
         
-      
-        
-        <input type="text" placeholder="  Buscar..."><i class="fa fa-search" style="color: white; font-size: 22px; cursor: pointer; position: absolute; right: 27px; top:70px;;"></i>
+       
         <br><br><br>
-        <a href="#">Administrar Imagenes</a>
-        <a href="#">Administrar Audios</a>
-        <a href="#">Administrar Vídeos</a>
-        <a href="#">Administrar Escenas</a>
-        <a href="#">Administrar Hotspots</a>
-        <a href="#">Administrar Usuarios</a>
-        <a href="#">Administrar Bibilioteca </a>
+        <a href="#" class="enlacesidenav"> Imagenes</a>
+        <a href="#" class="enlacesidenav"> Audios</a>
+        <a href="#" class="enlacesidenav"> Vídeos</a>
+        <a href="#" class="enlacesidenav"> Escenas</a>
+        <a href="#" class="enlacesidenav"> Hotspots</a>
+        <a href="#" class="enlacesidenav"> Usuarios</a>
+        <a href="#" class="enlacesidenav"> Bibilioteca </a>
+        <br><br><br><br><br>
+        <a href="#" class="cerrarses"> Cerrar Sesión</a>
+        
         
     </div>
     
-    <span class="sidenavmenu" onclick="openNav()">&#9776; Menu </span>
+    <span class="sidenavmenu" onclick="openNav()"> <!-- &#9776; --> <b> =&#62; </b> </span>
 
     
     

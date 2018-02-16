@@ -109,3 +109,19 @@ La dirección correcta seria "https://localhost:8443" saldra que no es segura, y
  Coges el archivo de joomla lo llevas a la carpeta "/srv/www" creamos la carpeta de joomla  y la descomprimimos hay, reiniciamos el apache
  
  Y ponemos "localhost/joomla/installation" y ya lo configuramos desd ehay
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ------------------------------------------------------------------------------------------------------------
+ 
+ Parte de Wordpress
+ 
+ Instalamos los paquetes desde el YAST y reiniciamos el apache con el "cd apache2 restart" 
+ 
+ En raiz/etc/wordpress y renombramos el archivo "wp-config.php" con las cosas necesarias con la base de datos , el usuario y contraseña
+ que seran las de root y demas y rellenamos los campos de "Put your unique phrase here" con admin tambien por ejemplo
+ 
