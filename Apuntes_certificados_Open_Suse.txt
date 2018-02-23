@@ -125,3 +125,19 @@ La dirección correcta seria "https://localhost:8443" saldra que no es segura, y
  En raiz/etc/wordpress y renombramos el archivo "wp-config.php" con las cosas necesarias con la base de datos , el usuario y contraseña
  que seran las de root y demas y rellenamos los campos de "Put your unique phrase here" con admin tambien por ejemplo
  
+ 
+ ----------------------------------------------------------------------------------------------------------------
+ 
+ Parte de Samba
+ 
+ Samba es utilizado para esblecer comunicaciones entre linux y windows tanto compartir carpetas y archivos como compartir impresoras y demas demases
+ 
+ Desde el YAST en serviocos de red esta la opción de "Servidor Samba" 
+ 
+ Como nombre de dominio ponemos "WORKGROUP" que es el defecto en windows y lo dejamos sin controlador de dominio
+ 
+ Establecemos que se arranque durante el arranque para que sea automatico y que ponemos el Puerto abierto del cortafuegos
+ 
+ Siguiente "Permitimos a los usuarios compartir sus directorios" y "Acceso de invitado"
+ 
+ 
