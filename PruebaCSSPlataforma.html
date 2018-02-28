@@ -227,6 +227,58 @@
         }
         
         
+        /* Prueba Responsividad */
+        
+        @media screen and (max-width: 600px) {
+        
+        .tabla {
+        
+            border: 0;
+        }
+  
+        .tabla caption {
+        
+            font-size: 1.3em;
+        }
+            
+        .tabla thead {
+    
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        .tabla tr {
+            border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: .625em;
+        }
+        .tabla td {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            font-size: .8em;
+            text-align: right;
+    }
+        .tabla td:before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+            }
+        .tabla td:last-child {
+        
+            border-bottom: 0;
+            }
+        }
+        
         
         /*
         
