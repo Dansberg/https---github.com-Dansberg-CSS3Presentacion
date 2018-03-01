@@ -276,6 +276,8 @@
         
     /* Parte del Formulario de Login */
 
+
+
         @font-face{
             font-family: comic;
             src:url(../fonts/Caviar.ttf);
@@ -410,7 +412,10 @@
 
     /* Probando Responsividad */
         
-     
+
+    /* Este no funciona bien */
+
+    /* 
     @media screen and (max-width: 639px) {
 
     #cont { border: 0; }
@@ -447,6 +452,49 @@
 }
 
 
-        
+      */  
+
+
+
+    /* Otra Prueba con flexbox */
     
+
+  @media screen and (max-width: 800px) {
+  
+   
+
+   tr { 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,3,3,0.2);
+    
+  }
+  td {
+    flex: auto ; 
+    margin-top: 70px;
+    font-size: 10px;
+      
+    }
+      
+  th {
+    flex: 1 auto;
+    background:#031363;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white; 
+    border-right: 1px solid white;
+    vertical-align: middle;
+    }
+      
+      a{
+          text-decoration: none
+      }
+  td.edit-buttons, td.empty {
+    /*flex: 1 0 90%;
+    text-align: center;*/
+  }
+}
+
+* { box-model: border-box; font-family: 'futura'; }
         
