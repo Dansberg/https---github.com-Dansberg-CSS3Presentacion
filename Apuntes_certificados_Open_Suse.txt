@@ -141,3 +141,19 @@ La dirección correcta seria "https://localhost:8443" saldra que no es segura, y
  Siguiente "Permitimos a los usuarios compartir sus directorios" y "Acceso de invitado"
  
  
+ ----------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ Git Gui ( Parte que no es obligatoria pero se apunta por si acaso )
+ 
+ Se puede instalar poniendo "Zipper in git" como root o desde yast
+ 
+    Comandos basicos:
+    
+    
+        - ~\> mkdir Git
+        
+        - ~\> cd Git
+        
+        - ~\Git>
+ 
