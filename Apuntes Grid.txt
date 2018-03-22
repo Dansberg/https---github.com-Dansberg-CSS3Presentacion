@@ -1,0 +1,25 @@
+
+
+
+                                        Explicación del Sistema de Grid
+
+
+    El sistema de Grid esta hecho para posicionar las páginas de una manera correcta y mas facil, ya puede ser
+    desde simplemente posicionar una barra de menu en un lateral hasta hacer la responsividad de una manera 
+    mas facil, la manera estandarizada es realizar 12 columnas de 8,33% de ancho, que en total dan el 100% de 
+    la página
+
+
+                                        Construir un sistema de Grid responsivo
+
+    Para empezar hay que asegurarse que los elementos tienen la propiedad "Box-Sizing" con con el atributo 
+    "Border-Box" eso hace que se incluyan las propiedades como "Padding" y "Bordes" en el ancho total de los 
+    elementos para ello pondremos 
+
+    "   * {
+
+            Box-Sizing: border-box;
+    
+        } "
+
+    
